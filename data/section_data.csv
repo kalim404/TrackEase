@@ -1,0 +1,4 @@
+Section,Asset_Condition,Importance,Traffic_Level
+Section_AB,Fair,High,Very High
+Section_BC,Good,Medium,High
+Section_CD,Poor,High,Medium
