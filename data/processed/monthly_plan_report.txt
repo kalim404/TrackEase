@@ -1,0 +1,44 @@
+========================================================================
+TrackEase Monthly Maintenance Plan Report
+========================================================================
+
+MONTHLY PROGRAMME
+------------------------------------------------------------------------
+Planning horizon               : 4 weeks
+One-time tasks assigned        : 1,099
+Maintenance minutes            : 147,020
+Coordinated blocks             : 23
+Coordination minutes saved     : 1,075
+Pending human approval         : 1,099
+Monthly allocation overlaps    : 0
+
+WEEK DISTRIBUTION
+------------------------------------------------------------------------
+Week 1: 165 blocks, 25,390 min, 27 Critical, 138 High, 6 coordinated, avg impact 40.48
+Week 2: 353 blocks, 50,600 min, 0 Critical, 166 High, 11 coordinated, avg impact 34.13
+Week 3: 394 blocks, 50,615 min, 0 Critical, 0 High, 6 coordinated, avg impact 37.91
+Week 4: 187 blocks, 20,415 min, 0 Critical, 0 High, 0 coordinated, avg impact 32.65
+
+CARRY-FORWARD / ESCALATION
+------------------------------------------------------------------------
+Unscheduled tasks              : 68
+Critical immediate escalation  : 10
+High-priority monthly review   : 29
+
+PLANNING POLICY
+------------------------------------------------------------------------
+Critical : Week 1
+High     : Weeks 1-2
+Medium   : Weeks 2-3
+Low      : Weeks 3-4
+Within the allowed range, tasks are assigned to the least-loaded week.
+The validated weekly weekday/time recommendation is preserved for the selected month week.
+
+IMPORTANT LIMITATION
+------------------------------------------------------------------------
+The prototype month is represented as four recurring planning weeks rather than a specific calendar month.
+A real deployment would map these relative weeks to actual dates and update them using live traffic/maintenance inputs.
+
+NEXT STAGE
+------------------------------------------------------------------------
+Add approval/reject/reschedule workflow and BDMS-style planning export before frontend integration.

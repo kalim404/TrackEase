@@ -1,0 +1,32 @@
+========================================================================
+TrackEase Weekly Section Movement Report
+========================================================================
+
+Section movement input     : C:\SIH_PROJECT\data\processed\section_movements.csv
+Operating schedule input   : C:\SIH_PROJECT\data\raw\schedules.jsonl
+Output file                : C:\SIH_PROJECT\data\processed\weekly_section_movements.csv
+
+SCHEDULE MATCHING
+------------------------------------------------------------------------
+Schedule records           : 10,535
+Movement train numbers     : 10,531
+Matched train numbers      : 10,531
+Unmatched train numbers    : 0
+
+WEEKLY TIMELINE
+------------------------------------------------------------------------
+Base section movements     : 198,458
+Weekly movement instances  : 1,059,040
+Unique trains represented  : 10,531
+Unique sections represented: 15,967
+Week-boundary movements    : 1,854
+
+INTERPRETATION
+------------------------------------------------------------------------
+Each row represents a train movement across a railway section on one scheduled weekly service instance.
+runs_days represents the origin departure weekday. Journey-day offsets determine the weekday at downstream sections.
+weekly_departure_minute uses Monday 00:00 as minute 0 and Sunday 23:59 as the end of the recurring week.
+
+NEXT STEP
+------------------------------------------------------------------------
+Use these weekly section occupancy events to calculate train-free gaps and candidate maintenance block windows.

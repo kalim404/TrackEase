@@ -1,0 +1,38 @@
+========================================================================
+TrackEase Explainable Priority Engine Report
+========================================================================
+
+Unified tasks scored          : 1,200
+Average TrackEase score       : 53.66
+Coordination-eligible tasks   : 215
+Multi-department sections     : 182
+
+TRACKEASE PRIORITY LEVELS
+------------------------------------------------------------------------
+Critical                   37
+High                      337
+Medium                    618
+Low                       208
+
+SOURCE SYSTEMS
+------------------------------------------------------------------------
+TMS                       642
+TDMS                      200
+SMMS                      197
+TMS+SMMS                  161
+
+SCORING MODEL
+------------------------------------------------------------------------
+Criticality             : 35 points
+Maintenance urgency     : 25 points
+Asset condition         : 20 points
+Section traffic         : 15 points
+Coordination potential  :  5 points
+                          ---------
+Maximum                  : 100 points
+
+IMPORTANT NOTE
+------------------------------------------------------------------------
+TrackEase priority is an explainable prototype decision-support score.
+It does not replace railway engineering judgement or official maintenance priority rules.
+TDMS records use explicit prototype fallbacks where real condition fields are unavailable.

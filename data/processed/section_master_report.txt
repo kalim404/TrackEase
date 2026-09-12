@@ -1,0 +1,34 @@
+========================================================================
+TrackEase Railway Section Master Report
+========================================================================
+
+Input file                  : C:\SIH_PROJECT\data\processed\stops_normalized.csv
+Output file                 : C:\SIH_PROJECT\data\processed\railway_sections.csv
+
+DATASET SUMMARY
+------------------------------------------------------------------------
+Normalized stop rows        : 209,256
+Unique trains               : 10,535
+Adjacent train movements    : 198,721
+Unique railway sections     : 16,063
+Same-station pairs removed  : 0
+
+TOP 10 SECTIONS BY UNIQUE TRAINS
+------------------------------------------------------------------------
+MSB -> MSF           473 trains
+BNXR -> DDJ           390 trains
+MPK -> MS            381 trains
+MPK -> MSF           381 trains
+GDY -> STM           375 trains
+BNXR -> SDAH          373 trains
+CMP -> PV            373 trains
+CMP -> TBMS          373 trains
+GDY -> SP            373 trains
+MBM -> MKK           373 trains
+
+NOTES
+------------------------------------------------------------------------
+Sections were derived from consecutive station stops in the normalized railway timetable.
+Both directions between the same station pair are represented by one TrackEase section.
+section_id values are internal TrackEase identifiers and are not official Indian Railways section codes.
+No maintenance records were assigned to sections during this step.

@@ -1,0 +1,27 @@
+========================================================================
+TrackEase COA Goods Train Forecast Adapter Report
+========================================================================
+
+Planning units available      : 1,167
+Planning sections             : 1,152
+Sections selected for forecast: 300
+Forecast events created       : 600
+Expected goods movements      : 1,196
+Average forecast duration     : 48.82 minutes
+Average confidence            : 79.76%
+
+INTEGRATION
+------------------------------------------------------------------------
+Source-system representation : COA
+Train category               : GOODS
+Integration mode             : PROTOTYPE_ADAPTER
+
+IMPORTANT LIMITATION
+------------------------------------------------------------------------
+These forecast events are deterministic prototype records used to demonstrate Control Office / COA integration.
+TrackEase does not claim live access to Indian Railways goods-train forecasts.
+Railway sections are real TrackEase sections derived from the timetable dataset.
+
+NEXT STEP
+------------------------------------------------------------------------
+Subtract / penalize forecast goods-train occupancy from candidate maintenance block windows before optimization.

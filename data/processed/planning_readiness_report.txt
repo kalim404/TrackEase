@@ -1,0 +1,64 @@
+========================================================================
+TrackEase Planning Readiness Validation Report
+========================================================================
+
+Planning units       : 1,167
+Adjusted windows     : 467,517
+Railway sections     : 16,063
+Weekly movements     : 1,059,040
+COA forecast events  : 600
+
+VALIDATION RESULTS
+------------------------------------------------------------------------
+[PASS] Coordinated planning tasks file
+    File found.
+[PASS] Adjusted block windows file
+    File found.
+[PASS] Railway sections file
+    File found.
+[PASS] Weekly section movements file
+    File found.
+[PASS] COA goods forecast file
+    File found.
+[PASS] Planning tasks schema
+    All required columns present.
+[PASS] Adjusted windows schema
+    All required columns present.
+[PASS] Railway sections schema
+    All required columns present.
+[PASS] Weekly movements schema
+    All required columns present.
+[PASS] COA forecast schema
+    All required columns present.
+[PASS] Planning-task IDs
+    No duplicate planning_task_id values.
+[PASS] Adjusted-window IDs
+    No duplicate adjusted_window_id values.
+[PASS] Planning-task section mapping
+    Every planning task references a valid railway section.
+[PASS] Block-window section mapping
+    Every adjusted window references a valid railway section.
+[PASS] Maintenance durations
+    All planning tasks have positive required duration.
+[PASS] TrackEase priority scores
+    All scores are within 0–100.
+[PASS] Weekly block boundaries
+    All windows are inside the recurring weekly timeline.
+[PASS] Block-window durations
+    Stored durations match start/end boundaries.
+[PASS] Minimum block duration
+    All windows are at least 30 minutes.
+[WARNING] Planning-window availability
+    1 planning units have no remaining window and may be unschedulable.
+[PASS] Scheduled-train conflict check
+    No adjusted windows overlap known section movements.
+[PASS] COA goods-forecast conflict check
+    No adjusted windows overlap buffered goods forecasts.
+
+SUMMARY
+------------------------------------------------------------------------
+Passed checks : 21
+Warnings      : 1
+Errors        : 0
+
+READY FOR OPTIMIZER V2

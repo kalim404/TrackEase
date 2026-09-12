@@ -1,0 +1,29 @@
+========================================================================
+TrackEase Available Block Window Report
+========================================================================
+
+Input file               : C:\SIH_PROJECT\data\processed\weekly_section_movements.csv
+Output file              : C:\SIH_PROJECT\data\processed\available_block_windows.csv
+
+SUMMARY
+------------------------------------------------------------------------
+Weekly movements         : 1,059,040
+Sections analysed        : 15,967
+Sections with windows    : 15,964
+Block windows discovered : 467,539
+Average window duration  : 275.67 minutes
+Longest window duration  : 9,895 minutes
+
+WINDOW CLASSIFICATION
+------------------------------------------------------------------------
+Short                   197,308
+Long                    163,790
+Medium                  106,441
+
+PROTOTYPE ASSUMPTIONS
+------------------------------------------------------------------------
+Safety buffer             : 10 minutes
+Minimum retained window   : 30 minutes
+Weekly timetable treatment : CYCLIC
+
+These windows represent timetable-based planning opportunities and are not official railway block authorities.

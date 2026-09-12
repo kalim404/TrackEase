@@ -1,0 +1,36 @@
+========================================================================
+TrackEase Human Decision Workflow Report
+========================================================================
+
+Decision queue records       : 1,099
+Decision history events      : 3
+
+DECISION STATES
+------------------------------------------------------------------------
+PENDING                         1,098
+APPROVED                            1
+REJECTED                            0
+RESCHEDULE_REQUESTED                0
+
+PENDING / RESCHEDULE PRIORITIES
+------------------------------------------------------------------------
+Critical                           26
+High                              304
+Medium                            581
+Low                               187
+
+WORKFLOW
+------------------------------------------------------------------------
+PENDING -> APPROVED
+PENDING -> REJECTED
+PENDING -> RESCHEDULE_REQUESTED
+A reschedule request does not create an arbitrary time. A separate safe-reschedule engine will search validated windows.
+
+AUDITABILITY
+------------------------------------------------------------------------
+Every decision change is appended to block_decision_history.csv.
+The decision queue stores the latest state for each recommendation.
+
+SAFETY NOTE
+------------------------------------------------------------------------
+TrackEase recommendations remain decision-support outputs and are not official railway block sanctions.

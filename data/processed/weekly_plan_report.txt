@@ -1,0 +1,40 @@
+========================================================================
+TrackEase Weekly Block Plan Report
+========================================================================
+
+WEEKLY PLAN
+------------------------------------------------------------------------
+Recommended blocks            : 1,099
+Maintenance minutes           : 147,020
+Critical blocks scheduled     : 27
+High blocks scheduled         : 304
+Coordinated blocks            : 23
+Coordination minutes saved    : 1,075
+Cross-day blocks              : 35
+Average operational impact    : 36.18/100
+Pending human approval        : 1,099
+
+UNSCHEDULED / ESCALATION
+------------------------------------------------------------------------
+Total unscheduled             : 68
+Critical escalation           : 10
+High-priority review          : 29
+
+DAY SUMMARY
+------------------------------------------------------------------------
+Mon: 674 blocks, 87,935 min, 17 Critical, 14 coordinated, avg impact 40.85
+Tue: 71 blocks, 9,125 min, 1 Critical, 2 coordinated, avg impact 41.61
+Wed: 31 blocks, 3,720 min, 3 Critical, 0 coordinated, avg impact 37.91
+Thu: 21 blocks, 2,830 min, 1 Critical, 2 coordinated, avg impact 35.55
+Fri: 20 blocks, 2,385 min, 2 Critical, 0 coordinated, avg impact 33.52
+Sat: 20 blocks, 2,940 min, 0 Critical, 1 coordinated, avg impact 36.31
+Sun: 262 blocks, 38,085 min, 3 Critical, 4 coordinated, avg impact 22.74
+
+HUMAN-IN-THE-LOOP
+------------------------------------------------------------------------
+All weekly blocks remain recommendations with PENDING approval status.
+Critical/High unscheduled tasks are surfaced separately rather than forced into unsafe windows.
+
+NEXT STAGE
+------------------------------------------------------------------------
+Build the monthly planning layer using weekly recommendations plus the unscheduled escalation/carry-forward queue.

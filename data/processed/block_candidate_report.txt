@@ -1,0 +1,32 @@
+========================================================================
+TrackEase Block Maintenance Candidate Report
+========================================================================
+
+Input file                 : C:\SIH_PROJECT\data\processed\maintenance_prepared.csv
+Output file                : C:\SIH_PROJECT\data\processed\block_maintenance_candidates.csv
+
+DATASET SUMMARY
+------------------------------------------------------------------------
+Prepared maintenance rows  : 100,000
+Block candidates created   : 28,633
+
+DEPARTMENT DISTRIBUTION
+------------------------------------------------------------------------
+Engineering                      20,267
+S&T                               4,569
+Engineering + S&T                 3,797
+
+PRIORITY DISTRIBUTION
+------------------------------------------------------------------------
+Medium                           15,544
+High                              6,508
+Low                               5,495
+Critical                          1,086
+
+ARCHITECTURE NOTES
+------------------------------------------------------------------------
+Only infrastructure-related records were converted into block-planning candidates.
+Rolling-stock failures such as Brake Failure, Wheel Defect and Bearing Failure are not directly treated as track-block maintenance tasks.
+Electrical maintenance is not inferred artificially because the current dataset does not provide a reliable electrical maintenance label.
+train_id is retained only for source traceability and is NOT assumed to match train_number in the timetable dataset.
+Station/section location, required block duration and allowed maintenance windows will be added in the next planning layer.

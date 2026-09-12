@@ -1,0 +1,43 @@
+========================================================================
+TrackEase Maintenance Work Order Report
+========================================================================
+
+Source candidates       : 28,633
+Work orders created     : 1,000
+Planning sections used  : 969
+
+PRIORITY DISTRIBUTION
+------------------------------------------------------------------------
+Medium                    350
+High                      300
+Critical                  200
+Low                       150
+
+DEPARTMENT DISTRIBUTION
+------------------------------------------------------------------------
+Engineering                    642
+S&T                            197
+Engineering + S&T              161
+
+REQUIRED BLOCK DURATIONS
+------------------------------------------------------------------------
+  45 minutes             27
+  60 minutes            117
+  75 minutes              9
+  90 minutes            121
+ 105 minutes              9
+ 120 minutes            176
+ 150 minutes            174
+ 180 minutes            238
+ 210 minutes            113
+ 240 minutes             16
+
+IMPORTANT PROTOTYPE NOTE
+------------------------------------------------------------------------
+The maintenance source dataset contains no genuine railway section/location information.
+Section assignment is therefore deterministic prototype mapping for demonstrating TrackEase block planning.
+It must not be presented as an observed maintenance location from the source dataset.
+
+DURATION NOTE
+------------------------------------------------------------------------
+Required maintenance durations are transparent rule-based prototype estimates because no validated duration target exists in the source maintenance dataset.

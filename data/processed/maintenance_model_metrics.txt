@@ -1,0 +1,66 @@
+========================================================================
+TrackEase Maintenance Requirement Model Report
+========================================================================
+
+DATASET
+------------------------------------------------------------------------
+Total records       : 100,000
+Training records    : 80,000
+Testing records     : 20,000
+Features used       : 30
+
+MODEL
+------------------------------------------------------------------------
+Algorithm           : Random Forest Classifier
+Trees               : 150
+Maximum depth       : 18
+Class balancing     : balanced
+
+TEST METRICS
+------------------------------------------------------------------------
+Accuracy            : 0.8180
+Precision           : 0.9694
+Recall              : 0.1020
+F1 Score            : 0.1846
+ROC-AUC             : 0.5421
+
+CONFUSION MATRIX
+------------------------------------------------------------------------
+[[15948    13]
+ [ 3627   412]]
+
+CLASSIFICATION REPORT
+------------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+           0     0.8147    0.9992    0.8976     15961
+           1     0.9694    0.1020    0.1846      4039
+
+    accuracy                         0.8180     20000
+   macro avg     0.8921    0.5506    0.5411     20000
+weighted avg     0.8460    0.8180    0.7536     20000
+
+
+LEAKAGE PREVENTION
+------------------------------------------------------------------------
+Excluded columns:
+- maintenance_required
+- maintenance_needed
+- failure_type
+- failure_severity
+- severity_priority
+- high_risk_flag
+- risk_score
+- infrastructure_warning
+- train_id
+
+NOTES
+------------------------------------------------------------------------
+The model predicts maintenance requirement from condition, sensor,
+environmental and operational features.
+
+failure_type, failure_severity, TrackEase target-derived fields and
+risk_score were deliberately excluded from model inputs.
+
+This model supports maintenance prioritization. It does not directly
+select railway block timings.

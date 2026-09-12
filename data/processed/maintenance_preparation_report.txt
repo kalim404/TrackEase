@@ -1,0 +1,54 @@
+========================================================================
+TrackEase Maintenance Data Preparation Report
+========================================================================
+
+Project root             : C:\SIH_PROJECT
+Input file               : C:\SIH_PROJECT\data\raw\maintenance\indian_railway_predictive_maintenance_100k.csv
+Output file              : C:\SIH_PROJECT\data\processed\maintenance_prepared.csv
+
+DATASET SUMMARY
+------------------------------------------------------------------------
+Original rows            : 100,300
+Final rows               : 100,000
+Original columns         : 35
+Final columns            : 39
+Duplicate rows removed   : 300
+
+PLANNING FEATURES
+------------------------------------------------------------------------
+Maintenance-needed rows  : 20,196
+High-risk rows           : 25,000
+Infrastructure warnings  : 46,214
+
+NUMERIC MISSING-VALUE HANDLING
+------------------------------------------------------------------------
+track_vibration_level               6,000 values filled with median 4.0081
+humidity_percent                    5,000 values filled with median 60.0776
+rainfall_mm                         8,000 values filled with median 16.8149
+wind_speed_kmph                     7,000 values filled with median 15.0252
+wheel_wear_percent                  3,000 values filled with median 45.0207
+axle_temperature_c                  6,000 values filled with median 65.0277
+brake_pad_wear_percent              4,000 values filled with median 39.9959
+bearing_temperature_c               7,000 values filled with median 69.9940
+battery_voltage                     4,000 values filled with median 24.0055
+traction_motor_temp_c               5,000 values filled with median 75.0846
+load_factor_percent                 1,000 values filled with median 64.9286
+delay_minutes                       2,000 values filled with median 13.4167
+last_maintenance_days               3,000 values filled with median 183.0000
+
+REMAINING MISSING VALUES
+------------------------------------------------------------------------
+No remaining missing values.
+
+NEW TRACKEASE COLUMNS
+------------------------------------------------------------------------
+maintenance_needed
+severity_priority
+infrastructure_warning
+high_risk_flag
+
+NOTES
+------------------------------------------------------------------------
+Maintenance train_id values are retained from the source dataset but are NOT assumed to match the railway schedule train_number values.
+The raw maintenance dataset was not modified.
+This prepared dataset is intended for future maintenance priority analysis and block-planning integration.

@@ -1,0 +1,41 @@
+========================================================================
+TrackEase Multi-Department Coordination Report
+========================================================================
+
+INPUT
+------------------------------------------------------------------------
+Prioritized maintenance tasks   : 1,200
+Railway sections represented    : 1,152
+
+COORDINATION
+------------------------------------------------------------------------
+New coordination groups         : 32
+Maintenance tasks bundled       : 65
+Two-department groups           : 30
+Three-department groups         : 2
+Existing source joint tasks     : 150
+
+PLANNER INPUT
+------------------------------------------------------------------------
+Original maintenance tasks      : 1,200
+Final planning units            : 1,167
+Coordinated planning units      : 32
+Standalone planning units       : 985
+
+ESTIMATED INFRASTRUCTURE DOWNTIME
+------------------------------------------------------------------------
+Separate-task duration total    : 158,325 minutes
+Coordinated duration total      : 156,470 minutes
+Estimated minutes saved         : 1,855 minutes
+Estimated reduction             : 1.17%
+
+PROTOTYPE COORDINATION ASSUMPTION
+------------------------------------------------------------------------
+Tasks belonging to the same department are treated as sequential workload.
+Different departments on the same section may operate in parallel where coordination is assumed feasible.
+A 10-minute coordination overhead is included.
+These values demonstrate optimization logic and are not official Indian Railways maintenance-duration rules.
+
+NEXT STAGE
+------------------------------------------------------------------------
+Integrate COA / goods-train forecast information before the final impact-aware weekly and monthly block optimizer.

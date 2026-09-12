@@ -1,1 +1,57 @@
+# ============================================
+# TrackEase - Git Ignore
+# ============================================
+
+# Python environments
 venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# VS Code local settings
+.vscode/
+
+# Secrets / API keys
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary/log files
+*.log
+*.tmp
+
+# --------------------------------------------
+# Large source maintenance datasets
+# --------------------------------------------
+data/raw/maintenance/*.csv
+
+# --------------------------------------------
+# Generated processed datasets
+# Keep reports, ignore heavy generated tables
+# --------------------------------------------
+data/processed/*.csv
+data/processed/*.jsonl
+
+# Keep text reports
+!data/processed/*.txt
+
+# --------------------------------------------
+# Trained binary models
+# --------------------------------------------
+data/models/*.joblib
+data/models/*.pkl
+
+# Future React frontend
+frontend/node_modules/
+frontend/dist/
+
+# Runtime databases
+*.db
+*.sqlite

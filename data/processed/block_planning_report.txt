@@ -1,0 +1,31 @@
+========================================================================
+TrackEase Automatic Block Planning Report
+========================================================================
+
+PLANNING SUMMARY
+------------------------------------------------------------------------
+Maintenance work orders : 1,000
+Successfully scheduled  : 980
+Unscheduled             : 20
+Scheduling success rate : 98.00%
+Railway sections used   : 949
+Maintenance block time  : 134,805 minutes
+
+SCHEDULED BY PRIORITY
+------------------------------------------------------------------------
+Critical                  194
+High                      294
+Medium                    347
+Low                       145
+
+PLANNING STRATEGY
+------------------------------------------------------------------------
+Critical maintenance is planned before High, Medium and Low priority maintenance.
+Maintenance is assigned only to train-free windows on the same railway section.
+A best-fit strategy prefers the smallest remaining window capable of completing the job.
+Allocated maintenance periods are reserved so multiple work orders cannot overlap.
+
+IMPORTANT PROTOTYPE LIMITATION
+------------------------------------------------------------------------
+Maintenance section locations are controlled prototype assignments because the source maintenance dataset does not contain genuine section locations.
+The produced schedule is decision-support output and does not represent an official railway block authority.

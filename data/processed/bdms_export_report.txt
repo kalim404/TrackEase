@@ -1,0 +1,38 @@
+========================================================================
+TrackEase BDMS-Style Export Report
+========================================================================
+
+DECISION QUEUE
+------------------------------------------------------------------------
+Total recommendations          : 1,099
+Approved                       : 1
+Pending                        : 1,098
+Rejected                       : 0
+Reschedule requested           : 0
+
+EXPORTED BLOCK REQUESTS
+------------------------------------------------------------------------
+BDMS-style requests created    : 1
+Approved maintenance minutes   : 210
+Coordination minutes saved     : 0
+
+QUALITY CHECKS
+------------------------------------------------------------------------
+Duplicate request IDs          : 0
+Duplicate recommendation IDs   : 0
+Non-approved records exported  : 0
+
+INTEGRATION
+------------------------------------------------------------------------
+Target system representation  : BDMS
+Integration mode              : PROTOTYPE_EXPORT_ADAPTER
+Schema                        : TRACKEASE_BDMS_STYLE_V1
+
+IMPORTANT LIMITATION
+------------------------------------------------------------------------
+This export demonstrates how approved TrackEase recommendations could be handed to a downstream block-management system.
+It is not an official Indian Railways BDMS schema and TrackEase does not claim live BDMS connectivity.
+
+NEXT STAGE
+------------------------------------------------------------------------
+Run Maintenance ML V2 experimentation, then perform a final backend validation and integrate TrackEase outputs into app.py.

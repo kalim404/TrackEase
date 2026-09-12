@@ -1,0 +1,40 @@
+========================================================================
+TrackEase Goods Forecast Window Adjustment Report
+========================================================================
+
+INPUT
+------------------------------------------------------------------------
+Original block windows          : 467,539
+COA forecast events             : 600
+Forecast sections               : 300
+
+WINDOW ADJUSTMENT
+------------------------------------------------------------------------
+Final adjusted windows          : 467,517
+Source windows affected         : 187
+Source windows split            : 27
+Source windows removed          : 49
+Adjusted output fragments       : 165
+Sections retaining windows      : 15,964
+
+AVAILABLE MAINTENANCE TIME
+------------------------------------------------------------------------
+Before COA adjustment           : 128,888,238 minutes
+After COA adjustment            : 128,878,674 minutes
+Forecast occupancy removed      : 9,564 minutes
+Availability reduction          : 0.0074%
+
+PROTOTYPE CONFIGURATION
+------------------------------------------------------------------------
+Goods-train safety buffer       : 10 minutes
+Minimum retained block duration : 30 minutes
+
+INTERPRETATION
+------------------------------------------------------------------------
+Maintenance windows are first derived from scheduled timetable occupancy and then adjusted using expected goods-train occupancy.
+A forecast can shorten, split or eliminate an otherwise available maintenance window.
+COA forecast records remain prototype inputs and do not represent live Control Office data.
+
+NEXT STAGE
+------------------------------------------------------------------------
+Use adjusted maintenance windows together with coordinated maintenance tasks in the impact-aware weekly/monthly block optimizer.

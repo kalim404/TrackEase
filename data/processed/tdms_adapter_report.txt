@@ -1,0 +1,29 @@
+========================================================================
+TrackEase TDMS Prototype Adapter Report
+========================================================================
+
+Railway sections available : 16,063
+Eligible sections          : 15,517
+TDMS tasks created         : 200
+
+PRIORITY DISTRIBUTION
+------------------------------------------------------------------------
+Medium                     80
+High                       50
+Low                        50
+Critical                   20
+
+TASK DISTRIBUTION
+------------------------------------------------------------------------
+OHE inspection                                 40
+OHE preventive maintenance                     40
+Traction power equipment inspection            40
+Sectioning equipment maintenance               40
+Electrical isolation inspection                40
+
+IMPORTANT PROTOTYPE NOTE
+------------------------------------------------------------------------
+These records represent a TDMS integration adapter for prototype demonstration only.
+TrackEase does not claim that these tasks originated from a live Indian Railways TDMS system.
+Railway section identifiers are real sections derived from the TrackEase timetable dataset.
+Task types, priorities and maintenance durations are controlled deterministic prototype values.

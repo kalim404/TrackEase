@@ -1,0 +1,65 @@
+========================================================================
+TrackEase Optimizer V2 Validation Report
+========================================================================
+
+Planning units             : 1,167
+Scheduled recommendations  : 1,099
+Unscheduled planning units : 68
+
+VALIDATION RESULTS
+------------------------------------------------------------------------
+[PASS] Scheduled task uniqueness
+    No planning task is scheduled twice.
+[PASS] Unscheduled task uniqueness
+    No planning task appears twice in the unscheduled output.
+[PASS] Scheduled/unscheduled separation
+    No task appears in both outputs.
+[PASS] Planning-unit accounting
+    All 1,167 input planning units are accounted for exactly once.
+[PASS] Scheduled task references
+    Every recommendation maps back to an original planning unit.
+[PASS] Scheduled section mapping
+    Every recommendation remains on the task's railway section.
+[PASS] Required-duration preservation
+    Optimizer preserved every task's required maintenance duration.
+[PASS] Allocation duration
+    Every scheduled block duration equals its task requirement.
+[PASS] Selected-window references
+    Every recommendation references a valid scored safe window.
+[PASS] Window section consistency
+    Every selected window belongs to the same section as the task.
+[PASS] Recommendation boundaries
+    Every scheduled allocation lies fully inside its selected safe window.
+[PASS] Operational-impact traceability
+    Recommendation impact values match their source windows.
+[PASS] Maintenance allocation conflicts
+    No optimized maintenance recommendations overlap on a section.
+[PASS] Scheduled-train conflict validation
+    No optimized block overlaps scheduled section movement.
+[PASS] COA goods conflict validation
+    No optimized block overlaps buffered prototype goods occupancy.
+[PASS] Human approval state
+    All recommendations remain PENDING for human review.
+[PASS] Unscheduled reason consistency
+    All unscheduled reason codes agree with source-window feasibility.
+[WARNING] High-priority feasibility
+    39 Critical/High units remain unscheduled, including 10 Critical. These should be escalated or moved into alternate/monthly planning.
+
+DIRECT CONFLICT CHECKS
+------------------------------------------------------------------------
+Maintenance overlaps       : 0
+Scheduled-train conflicts  : 0
+COA goods conflicts        : 0
+
+UNSCHEDULED ESCALATION
+------------------------------------------------------------------------
+Critical unscheduled       : 10
+Critical/High unscheduled  : 39
+
+SUMMARY
+------------------------------------------------------------------------
+Passed checks              : 17
+Warnings                   : 1
+Errors                     : 0
+
+OPTIMIZER V2 VALIDATED

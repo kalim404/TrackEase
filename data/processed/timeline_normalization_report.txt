@@ -1,0 +1,66 @@
+========================================================================
+TrackEase Timeline Normalization Report
+========================================================================
+
+Project root              : C:\SIH_PROJECT
+Input file                : C:\SIH_PROJECT\data\raw\stops.csv
+Output file               : C:\SIH_PROJECT\data\processed\stops_normalized.csv
+
+DATASET SUMMARY
+------------------------------------------------------------------------
+Original rows             : 209,256
+Final rows                : 209,256
+Duplicate rows removed    : 0
+Unique trains             : 10,535
+Unique stations           : 8,591
+Train timelines           : 10,535
+
+NORMALIZATION
+------------------------------------------------------------------------
+Invalid sequence values   : 0
+Invalid day values        : 0
+Invalid arrival times     : 10,677
+Invalid departure times   : 10,677
+Halt values calculated    : 0
+Invalid halt values       : 0
+Invalid distance values   : 0
+Negative distances        : 0
+Overnight timeline stops  : 95
+Invalid timeline rows     : 21,354
+
+MISSING VALUES AFTER NORMALIZATION
+------------------------------------------------------------------------
+train_number             : 0
+seq                      : 0
+station_code             : 0
+station_name             : 86
+day                      : 0
+arrival                  : 10,677
+departure                : 10,677
+halt_min                 : 0
+distance_km              : 0
+
+FINAL SCHEMA
+------------------------------------------------------------------------
+train_number             : string
+seq                      : Int64
+station_code             : string
+station_name             : string
+day                      : Int64
+arrival                  : str
+departure                : str
+halt_min                 : float64
+distance_km              : float64
+
+STATUS
+------------------------------------------------------------------------
+⚠ Some rows contain invalid or missing timeline fields.
+✓ No exact duplicate rows were found.
+
+NOTE
+------------------------------------------------------------------------
+The original raw CSV was not modified.
+The normalized dataset is intended for the next TrackEase
+timeline validation and scheduling stages.
+
+========================================================================

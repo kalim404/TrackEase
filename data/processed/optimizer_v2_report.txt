@@ -1,0 +1,61 @@
+========================================================================
+TrackEase Impact-Aware Weekly Block Optimizer V2 Report
+========================================================================
+
+INPUT
+------------------------------------------------------------------------
+Planning units                  : 1,167
+Scored safe windows             : 467,517
+
+OPTIMIZATION RESULT
+------------------------------------------------------------------------
+Scheduled planning units        : 1,099
+Unscheduled planning units      : 68
+Scheduling feasibility          : 94.17%
+Scheduled maintenance minutes   : 147,020
+Coordinated units scheduled     : 23
+Coordination minutes preserved  : 1,075
+Average selected impact         : 36.18/100
+Average recommendation score    : 63.97/100
+
+SCHEDULED PRIORITIES
+------------------------------------------------------------------------
+Critical                     27
+High                        304
+Medium                      581
+Low                         187
+
+SELECTED OPERATIONAL IMPACT
+------------------------------------------------------------------------
+Low                         457
+Moderate                    306
+High                        264
+Very High                    72
+
+UNSCHEDULED REASONS
+------------------------------------------------------------------------
+NO_WINDOW_LONG_ENOUGH                            67
+NO_SAFE_WINDOW_ON_SECTION                         1
+
+SAFETY / CONSISTENCY CHECKS
+------------------------------------------------------------------------
+Duplicate scheduled task IDs    : 0
+Maintenance allocation overlaps : 0
+Task in both outputs             : 0
+Invalid allocation boundaries    : 0
+Tasks accounted for              : 1,167/1,167
+
+SELECTION STRATEGY
+------------------------------------------------------------------------
+Task ordering: higher TrackEase maintenance priority first; coordination benefit and required duration are tie-breakers.
+Candidate cost: 75% operational impact + 25% fit/slack penalty.
+Lower candidate cost is preferred. Allocated maintenance time is reserved immediately so later recommendations cannot overlap.
+
+IMPORTANT LIMITATION
+------------------------------------------------------------------------
+This output is an AI-assisted/prototype planning recommendation. It does not constitute an official railway block sanction.
+Final recommendations remain subject to railway operating rules, engineering validation and human approval.
+
+NEXT STAGE
+------------------------------------------------------------------------
+Validate Optimizer V2 allocations, then build explicit weekly and monthly plan views plus approval/explanation workflow.

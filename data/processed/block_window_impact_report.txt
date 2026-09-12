@@ -1,0 +1,48 @@
+========================================================================
+TrackEase Operational Block Window Impact Report
+========================================================================
+
+INPUT
+------------------------------------------------------------------------
+Adjusted maintenance windows : 467,517
+Weekly train movements       : 1,059,040
+
+RESULT
+------------------------------------------------------------------------
+Windows scored               : 467,517
+Sections scored              : 15,964
+Average impact score         : 40.08/100
+Minimum impact score         : 0.00/100
+Maximum impact score         : 99.63/100
+COA-adjusted windows         : 165
+
+OPERATIONAL IMPACT LEVELS
+------------------------------------------------------------------------
+Low                     127,694
+Moderate                173,512
+High                    152,459
+Very High                13,852
+
+SCORING MODEL
+------------------------------------------------------------------------
+Section traffic intensity      : 40 points
+Maintenance-window scarcity    : 20 points
+Window flexibility             : 20 points
+COA goods exposure             : 20 points
+                                 ---------
+Maximum operational impact     : 100 points
+
+INTERPRETATION
+------------------------------------------------------------------------
+LOWER SCORE = more attractive operational window.
+
+The score does not declare whether a maintenance task fits inside a window.
+Task-duration feasibility and best-fit allocation will be handled by Optimizer V2.
+
+PROTOTYPE LIMITATION
+------------------------------------------------------------------------
+This is a transparent decision-support scoring model and is not an official Indian Railways operational impact formula.
+
+NEXT STAGE
+------------------------------------------------------------------------
+Optimizer V2 will combine TrackEase maintenance priority, coordination, window duration and operational impact to select final blocks.

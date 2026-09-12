@@ -1,0 +1,92 @@
+========================================================================
+TrackEase Final Backend Validation Report
+========================================================================
+
+VALIDATION RESULTS
+------------------------------------------------------------------------
+[PASS] File: unified_tasks
+    Found C:\SIH_PROJECT\data\processed\unified_maintenance_tasks.csv
+[PASS] File: planning_tasks
+    Found C:\SIH_PROJECT\data\processed\coordinated_planning_tasks.csv
+[PASS] File: optimized_weekly
+    Found C:\SIH_PROJECT\data\processed\optimized_weekly_blocks.csv
+[PASS] File: optimizer_unscheduled
+    Found C:\SIH_PROJECT\data\processed\optimizer_v2_unscheduled.csv
+[PASS] File: weekly_plan
+    Found C:\SIH_PROJECT\data\processed\weekly_block_plan.csv
+[PASS] File: monthly_plan
+    Found C:\SIH_PROJECT\data\processed\monthly_block_plan.csv
+[PASS] File: decision_queue
+    Found C:\SIH_PROJECT\data\processed\block_decision_queue.csv
+[PASS] File: decision_history
+    Found C:\SIH_PROJECT\data\processed\block_decision_history.csv
+[PASS] File: bdms_export
+    Found C:\SIH_PROJECT\data\processed\bdms_block_requests.csv
+[PASS] File: planning_readiness_report
+    Found C:\SIH_PROJECT\data\processed\planning_readiness_report.txt
+[PASS] File: optimizer_validation_report
+    Found C:\SIH_PROJECT\data\processed\optimizer_v2_validation_report.txt
+[PASS] File: ml_v2_metrics
+    Found C:\SIH_PROJECT\data\processed\maintenance_ml_v2_metrics.csv
+[PASS] File: ml_v2_metadata
+    Found C:\SIH_PROJECT\data\models\maintenance_model_v2_metadata.joblib
+[PASS] Unified task IDs
+    unified_task_id values are unique.
+[PASS] Planning task IDs
+    planning_task_id values are unique.
+[PASS] Optimizer recommendation IDs
+    recommendation_id values are unique.
+[PASS] Weekly recommendation IDs
+    recommendation_id values are unique.
+[PASS] Monthly planning task IDs
+    planning_task_id values are unique.
+[PASS] Decision queue IDs
+    recommendation_id values are unique.
+[PASS] BDMS recommendation IDs
+    recommendation_id values are unique.
+[PASS] Optimizer accounting
+    1,099 scheduled + 68 unscheduled = 1,167 planning units.
+[PASS] Weekly plan consistency
+    Weekly plan contains exactly the 1,099 optimized recommendations.
+[PASS] Monthly plan consistency
+    Monthly plan assigns all 1,099 scheduled recommendations exactly once.
+[PASS] Monthly week range
+    All monthly assignments are in Weeks 1-4.
+[PASS] Decision queue consistency
+    Decision queue mirrors all 1,099 weekly recommendations.
+[PASS] Decision states
+    All decision states are valid.
+[PASS] BDMS approved-only export
+    1 approved recommendation(s) match BDMS-style export exactly.
+[PASS] BDMS approval safety
+    No non-approved recommendation appears in the BDMS export.
+[PASS] Planning readiness gate
+    Planning readiness report indicates zero errors.
+[PASS] Optimizer V2 validation gate
+    Optimizer V2 validation report indicates zero errors.
+[PASS] ML V2 integration guard
+    Weak ML evidence is correctly blocked from priority-score integration.
+[WARNING] ML V2 predictive evidence
+    ML V2 was intentionally NOT integrated into priority. TrackEase should continue using its explainable rule-based priority engine.
+[PASS] ML V2 model comparison
+    3 candidate model results are recorded.
+
+CORE COUNTS
+------------------------------------------------------------------------
+unified_tasks                       1,200
+planning_units                      1,167
+scheduled_units                     1,099
+unscheduled_units                      68
+weekly_plan_rows                    1,099
+monthly_plan_rows                   1,099
+decision_queue_rows                 1,099
+decision_history_events                 3
+bdms_export_rows                        1
+
+SUMMARY
+------------------------------------------------------------------------
+Passed checks : 32
+Warnings      : 1
+Errors        : 0
+
+BACKEND READY FOR FRONTEND INTEGRATION

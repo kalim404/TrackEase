@@ -1,0 +1,33 @@
+========================================================================
+TrackEase Section Movement Timeline Report
+========================================================================
+
+Stops input              : C:\SIH_PROJECT\data\processed\stops_normalized.csv
+Section master           : C:\SIH_PROJECT\data\processed\railway_sections.csv
+Movement output          : C:\SIH_PROJECT\data\processed\section_movements.csv
+
+SUMMARY
+------------------------------------------------------------------------
+Normalized stop rows     : 209,256
+Initial movements        : 198,721
+Usable timed movements   : 198,458
+Unique trains represented: 10,531
+Unique sections used     : 15,967
+
+QUALITY CHECKS
+------------------------------------------------------------------------
+Same-station removed     : 0
+Unmapped sections        : 0
+Missing-time movements   : 142
+Overnight adjustments    : 0
+Invalid durations        : 121
+
+IMPORTANT INTERPRETATION
+------------------------------------------------------------------------
+departure_abs_minute and arrival_abs_minute are relative to each train's journey start.
+Journey Day 1 must NOT yet be interpreted as Monday or as the same calendar day for all trains.
+Calendar operating days must be aligned before exact maintenance block windows are calculated.
+
+NEXT PIPELINE STAGE
+------------------------------------------------------------------------
+Align train movements with train operating-day information, then calculate real section occupancy and train-free block windows.

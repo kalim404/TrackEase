@@ -1,0 +1,24 @@
+========================================================================
+TrackEase Safe Reschedule Report
+========================================================================
+
+Generation mode               : RESCHEDULE_REQUESTED
+Recommendations evaluated     : 1
+Recommendations with options  : 1
+Alternative options generated : 5
+
+SAFETY
+------------------------------------------------------------------------
+Alternatives are generated only from validated scored maintenance windows.
+Existing non-rejected recommendations reserve capacity.
+The recommendation being rescheduled does not reserve its old slot while alternatives are evaluated.
+No arbitrary time is generated outside validated windows.
+
+RANKING
+------------------------------------------------------------------------
+75% operational impact + 25% fit/slack penalty.
+Lower alternative cost is preferred.
+
+HUMAN-IN-THE-LOOP
+------------------------------------------------------------------------
+Applying an alternative returns the recommendation to PENDING. The planner must explicitly approve the replacement.

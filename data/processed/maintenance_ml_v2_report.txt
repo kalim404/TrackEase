@@ -1,0 +1,84 @@
+========================================================================
+TrackEase Maintenance ML V2 Experiment Report
+========================================================================
+
+DATA
+------------------------------------------------------------------------
+Rows                         : 100,000
+Features used                : 30
+Positive prevalence          : 20.20%
+Train rows                   : 70,000
+Validation rows              : 15,000
+Test rows                    : 15,000
+
+LEAKAGE CONTROL
+------------------------------------------------------------------------
+Excluded: failure_severity
+Excluded: failure_type
+Excluded: high_risk_flag
+Excluded: infrastructure_warning
+Excluded: maintenance_needed
+Excluded: maintenance_required
+Excluded: risk_score
+Excluded: severity_priority
+Excluded: train_id
+
+MODEL COMPARISON
+------------------------------------------------------------------------
+Model: Random Forest
+  Test ROC-AUC     : 0.5499
+  Test PR-AUC      : 0.3342
+  PR-AUC gain      : 0.1322
+  Tuned threshold  : 0.26
+  Tuned precision  : 0.2020
+  Tuned recall     : 0.9997
+  Tuned F1         : 0.3361
+  Tuned F2         : 0.5585
+  Evidence         : NOT_RECOMMENDED_FOR_PRIORITY_INTEGRATION
+
+Model: Extra Trees
+  Test ROC-AUC     : 0.5404
+  Test PR-AUC      : 0.3057
+  PR-AUC gain      : 0.1038
+  Tuned threshold  : 0.15
+  Tuned precision  : 0.2019
+  Tuned recall     : 1.0000
+  Tuned F1         : 0.3360
+  Tuned F2         : 0.5585
+  Evidence         : NOT_RECOMMENDED_FOR_PRIORITY_INTEGRATION
+
+Model: Logistic Regression
+  Test ROC-AUC     : 0.5343
+  Test PR-AUC      : 0.2451
+  PR-AUC gain      : 0.0431
+  Tuned threshold  : 0.38
+  Tuned precision  : 0.2019
+  Tuned recall     : 0.9997
+  Tuned F1         : 0.3360
+  Tuned F2         : 0.5584
+  Evidence         : NOT_RECOMMENDED_FOR_PRIORITY_INTEGRATION
+
+BEST MODEL
+------------------------------------------------------------------------
+Model                        : Random Forest
+Held-out ROC-AUC             : 0.5499
+Held-out PR-AUC              : 0.3342
+Positive prevalence baseline : 0.2020
+Selected threshold           : 0.26
+Tuned precision              : 0.2020
+Tuned recall                 : 0.9997
+Tuned F2                     : 0.5585
+
+TRACKEASE DECISION
+------------------------------------------------------------------------
+Evidence status              : NOT_RECOMMENDED_FOR_PRIORITY_INTEGRATION
+The dataset/model combination does not demonstrate enough held-out discrimination to justify adding ML into the maintenance-priority score.
+
+The ML model does not automatically replace the existing explainable TrackEase priority score.
+No synthetic maintenance training rows were introduced.
+
+ARTIFACTS
+------------------------------------------------------------------------
+Best model                   : C:\SIH_PROJECT\data\models\maintenance_model_v2.joblib
+Metadata                     : C:\SIH_PROJECT\data\models\maintenance_model_v2_metadata.joblib
+Metrics table                : C:\SIH_PROJECT\data\processed\maintenance_ml_v2_metrics.csv
