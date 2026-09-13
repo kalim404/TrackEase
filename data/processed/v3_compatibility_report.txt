@@ -1,0 +1,51 @@
+========================================================================
+TrackEase V3.7 Multi-Department Compatibility Report
+========================================================================
+
+SUMMARY
+------------------------------------------------------------------------
+Compatibility graph edges      : 723
+Coordination groups             : 32
+Parallel-capable edges          : 708
+Sequential-only edges           : 15
+Integrated-block candidate edges: 34
+Shadow/opportunity edges        : 674
+Incompatible edges              : 0
+
+LOCALITY
+------------------------------------------------------------------------
+ADJACENT_SECTION                                      674
+SAME_SECTION                                           49
+
+COMPATIBILITY STATUS
+------------------------------------------------------------------------
+COMPATIBLE_PARALLEL                                     9
+COMPATIBLE_SEQUENTIAL                                  15
+CONDITIONAL                                           699
+
+RELATIONSHIP TYPES
+------------------------------------------------------------------------
+ADJACENT_SHADOW_OPPORTUNITY_CANDIDATE                 380
+ADJACENT_SHADOW_WITH_ADDITIONAL_ISOLATION_REVIEW        294
+PARALLEL_WITH_ADDITIONAL_ISOLATION_REVIEW              25
+SEQUENTIAL_SHARED_BLOCK_CANDIDATE                      15
+PARALLEL_INTEGRATED_CANDIDATE                           9
+
+INTEGRITY
+------------------------------------------------------------------------
+Duplicate compatibility edge IDs : 0
+Self-edges                       : 0
+Unknown-task edges               : 0
+Duplicate coordination group IDs : 0
+Invalid coordination group sizes : 0
+
+IMPORTANT INTERPRETATION
+------------------------------------------------------------------------
+This graph identifies candidate compatibility relationships. It does not itself authorize simultaneous work.
+Optimizer V3 must still check exact train windows, crew shifts, machine-day availability, travel/repositioning, isolation, disconnection, resource assignment and safe block duration.
+Integrated blocks are limited here to same-section, cross-department candidate relationships.
+Adjacent-section relationships are treated as conditional shadow/opportunity candidates rather than automatically integrated blocks.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Build the enhanced asset-risk and asset-availability scoring layer, followed by explicit passenger/freight train-impact metrics and the opportunity detector.

@@ -1,0 +1,64 @@
+========================================================================
+TrackEase V3.8 Asset Risk & Availability Report
+========================================================================
+
+SUMMARY
+------------------------------------------------------------------------
+Canonical assets                  : 1,185
+Scored assets                     : 1,185
+Canonical tasks                   : 1,200
+Scored tasks                      : 1,200
+Average asset-risk score          : 54.25
+Average availability-gain score   : 28.53
+Average maintenance-value score   : 48.41
+Average expected risk reduction   : 15.88
+
+ASSET RISK BANDS
+------------------------------------------------------------------------
+CRITICAL                     56
+HIGH                        326
+MEDIUM                      616
+LOW                         202
+
+MAINTENANCE VALUE BANDS
+------------------------------------------------------------------------
+CRITICAL                     15
+HIGH                        174
+MEDIUM                      804
+LOW                         207
+
+SCORE CONFIDENCE
+------------------------------------------------------------------------
+HIGH                          0
+MEDIUM                        0
+LOW                       1,200
+
+SCORING WEIGHTS
+------------------------------------------------------------------------
+asset_criticality                  20.0
+condition_failure_risk             20.0
+urgency                            15.0
+safety_consequence                 15.0
+overdue_postponement               10.0
+availability_gain                  15.0
+duration_efficiency                 5.0
+
+INTEGRITY
+------------------------------------------------------------------------
+Duplicate asset scores           : 0
+Duplicate task scores            : 0
+Tasks missing scores             : 0
+Score values out of range        : 0
+Rows using ML                    : 0
+
+INTERPRETATION
+------------------------------------------------------------------------
+The V3.8 score measures intrinsic maintenance value before train/freight disruption cost is considered.
+Asset-availability gain is a normalized decision-support score, not a claim of percentage uptime improvement.
+Where real/canonical source signals are unavailable, TrackEase uses documented fallbacks from existing task priority/type rather than fabricating hidden asset measurements.
+The weak V2 ML model is intentionally not used in this scoring layer.
+Safety remains a hard constraint; a high score cannot override an unsafe block arrangement.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Build explicit passenger/freight train-impact metrics so Optimizer V3 can balance maintenance value against operational disruption.

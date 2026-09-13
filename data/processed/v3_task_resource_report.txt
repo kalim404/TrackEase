@@ -1,0 +1,54 @@
+========================================================================
+TrackEase V3 Task Resource Requirement Report
+========================================================================
+
+SUMMARY
+------------------------------------------------------------------------
+Maintenance tasks            : 1,200
+Resource requirements        : 8,059
+Execution summaries          : 1,200
+Task dependencies            : 6
+Tasks requiring machines     : 1,200
+Tasks requiring isolation    : 200
+Tasks requiring protection   : 1,200
+
+REQUIREMENTS BY TYPE
+------------------------------------------------------------------------
+CREW                                  1,361
+EQUIPMENT                             1,868
+MACHINE                               1,361
+MATERIAL                                869
+POWER_ISOLATION                         200
+PROTECTION_CREW                       1,200
+PROTECTION_EQUIPMENT                  1,200
+
+REQUIREMENTS BY RESOURCE CATEGORY
+------------------------------------------------------------------------
+CREW                                  2,561
+EQUIPMENT                             3,068
+MACHINE                               1,361
+MATERIAL                                869
+OPERATIONAL_PREREQUISITE                200
+
+INTEGRITY
+------------------------------------------------------------------------
+Duplicate requirement IDs    : 0
+Duplicate execution task IDs : 0
+Tasks missing requirements   : 0
+Unknown crew skills          : 0
+Unknown machine types        : 0
+Unknown equipment types      : 0
+Unknown materials            : 0
+Invalid task dependencies    : 0
+
+PROVENANCE
+------------------------------------------------------------------------
+Data origin                  : TRACKEASE_V3_DERIVED_REQUIREMENTS
+Integration mode             : PROTOTYPE_RESOURCE_REQUIREMENT_MODEL
+
+Resource requirements are deterministic prototype mappings derived from canonical TrackEase task type, department and safety prerequisites.
+They are not claimed to be official Indian Railways work norms or resource standards.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Validate physical resource feasibility: crew skill/shift, machine availability, equipment, materials, protection, power isolation and resource travel to the worksite.

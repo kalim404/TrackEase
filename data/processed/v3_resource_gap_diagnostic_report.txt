@@ -1,0 +1,27 @@
+========================================================================
+TrackEase V3 Resource Gap Diagnostic Report
+========================================================================
+
+Gap requirements analysed     : 182
+
+DIAGNOSES
+------------------------------------------------------------------------
+REACHABLE_BUT_OUTSIDE_CURRENT_TRAVEL_POLICY               182
+
+CATEGORY + DIAGNOSIS
+------------------------------------------------------------------------
+CREW | REACHABLE_BUT_OUTSIDE_CURRENT_TRAVEL_POLICY        112
+MACHINE | REACHABLE_BUT_OUTSIDE_CURRENT_TRAVEL_POLICY       35
+EQUIPMENT | REACHABLE_BUT_OUTSIDE_CURRENT_TRAVEL_POLICY       28
+MATERIAL | REACHABLE_BUT_OUTSIDE_CURRENT_TRAVEL_POLICY        4
+OPERATIONAL_PREREQUISITE | REACHABLE_BUT_OUTSIDE_CURRENT_TRAVEL_POLICY        3
+
+INTERPRETATION
+------------------------------------------------------------------------
+NO_MATCHING_RESOURCE_EXISTS means the prototype resource master lacks that required skill/type.
+MATCHING_RESOURCE_EXISTS_BUT_NOT_AVAILABLE means the resource exists but has no available weekly record.
+NO_NETWORK_PATH_FROM_COMPATIBLE_RESOURCE_BASE means the resource and work section are in disconnected graph components.
+REACHABLE_BUT_OUTSIDE_CURRENT_TRAVEL_POLICY means the resource exists and the section is connected, but current radius/travel thresholds intentionally reject the assignment.
+UNEXPECTED_FEASIBILITY_MISMATCH indicates a likely logic mismatch that should be fixed before freezing V3.5.
+
+Unexpected mismatches          : 0

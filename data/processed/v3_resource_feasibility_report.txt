@@ -1,0 +1,48 @@
+========================================================================
+TrackEase V3 Resource Feasibility Report
+========================================================================
+
+SUMMARY
+------------------------------------------------------------------------
+Maintenance tasks            : 1,200
+Resource requirements        : 8,059
+Assignment candidates        : 68,726
+Resource-ready tasks         : 1,200
+Tasks with resource gaps     : 0
+Tasks requiring repositioning: 70
+Tasks with dependencies      : 6
+
+TASK STATUS
+------------------------------------------------------------------------
+RESOURCE_READY_FOR_OPTIMIZER                  1,125
+RESOURCE_READY_REPOSITIONING_AND_SEQUENCE          1
+RESOURCE_READY_REPOSITIONING_REQUIRED            69
+RESOURCE_READY_REQUIRES_SEQUENCE                  5
+
+CANDIDATES BY RESOURCE CATEGORY
+------------------------------------------------------------------------
+CREW                                         34,578
+EQUIPMENT                                    24,544
+MACHINE                                       5,797
+MATERIAL                                      2,607
+OPERATIONAL_PREREQUISITE                      1,200
+
+RESOURCE GAPS
+------------------------------------------------------------------------
+No mandatory task-resource gaps detected.
+
+INTEGRITY
+------------------------------------------------------------------------
+Duplicate candidate IDs      : 0
+Duplicate feasibility tasks  : 0
+Tasks missing feasibility    : 0
+
+IMPORTANT SCOPE
+------------------------------------------------------------------------
+This stage verifies physical resource readiness and network reachability before final block-time selection.
+Exact crew shift, machine-day, simultaneous resource conflict, resource repositioning/travel, and block-time coverage checks remain mandatory in Optimizer V3.
+Travel distances are a network-access proxy derived from available section distances, station coordinates, or an explicit fallback hop-distance proxy.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Build enhanced asset-risk / availability scoring and explicit train-impact metrics, then run exact resource-aware Optimizer V3.

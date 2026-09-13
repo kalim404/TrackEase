@@ -1,0 +1,59 @@
+========================================================================
+TrackEase V3 Canonical Domain Model Report
+========================================================================
+
+SOURCE
+------------------------------------------------------------------------
+Input source                 : prioritized_maintenance_tasks.csv
+Input maintenance tasks      : 1,200
+
+CANONICAL OUTPUTS
+------------------------------------------------------------------------
+Assets                       : 1,185
+Maintenance requests         : 1,200
+Executable tasks             : 1,200
+
+ASSET TYPES
+------------------------------------------------------------------------
+SIGNALLING_TELECOM_ASSET                  355
+TRACK_INFRASTRUCTURE_ASSET                630
+TRACTION_ELECTRICAL_ASSET                 200
+
+REQUEST TYPES
+------------------------------------------------------------------------
+CORRECTIVE                                218
+INSPECTION                                537
+PREVENTIVE                                430
+URGENT_PLANNED                             15
+
+TASK DEPARTMENTS
+------------------------------------------------------------------------
+Electrical                                200
+Engineering                               642
+Engineering + S&T                         161
+S&T                                       197
+
+INTEGRITY CHECKS
+------------------------------------------------------------------------
+Duplicate asset IDs          : 0
+Duplicate request IDs        : 0
+Duplicate task IDs           : 0
+Requests missing asset       : 0
+Tasks missing request        : 0
+Tasks missing asset          : 0
+Invalid duration ranges      : 0
+
+PROVENANCE
+------------------------------------------------------------------------
+Data origin                  : TRACKEASE_V2_DERIVED
+Integration mode             : PROTOTYPE_DERIVED_DOMAIN_MODEL
+
+This layer converts existing TrackEase V2 maintenance planning records
+into a canonical Asset -> Request -> Task model.
+It does not claim unavailable public maintenance records contain
+authoritative Indian Railways asset serial numbers.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Build network-constraint enrichment and the resource master
+(departments, crews, machines, equipment, materials).

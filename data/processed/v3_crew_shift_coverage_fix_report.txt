@@ -1,0 +1,46 @@
+========================================================================
+TrackEase V3 Crew Shift Coverage Fix Report
+========================================================================
+
+POLICY
+------------------------------------------------------------------------
+Existing crews only; no crew count increased.
+Engineering/S&T/Electrical redistributed across:
+  EARLY 00:00-08:00
+  DAY   08:00-16:00
+  LATE  16:00-00:00
+Protection shift allocation retained.
+Existing rest-day/weekday availability flags retained.
+
+BEFORE
+------------------------------------------------------------------------
+Electrical           DAY           17
+Electrical           NIGHT          8
+Engineering          DAY           39
+Engineering          NIGHT         19
+Protection           DAY           22
+Protection           EARLY         23
+Protection           LATE          22
+S&T                  DAY           24
+S&T                  NIGHT         12
+
+AFTER
+------------------------------------------------------------------------
+Electrical           DAY            9
+Electrical           EARLY          8
+Electrical           LATE           8
+Engineering          DAY           19
+Engineering          EARLY         20
+Engineering          LATE          19
+Protection           DAY           22
+Protection           EARLY         23
+Protection           LATE          22
+S&T                  DAY           12
+S&T                  EARLY         12
+S&T                  LATE          12
+
+PROVENANCE
+------------------------------------------------------------------------
+data_origin      : PROTOTYPE_GENERATED
+integration_mode : DETERMINISTIC_CONTINUOUS_SHIFT_COVERAGE_POLICY
+Important: This is a prototype staffing-availability model, not an official Indian Railways roster.

@@ -1,0 +1,46 @@
+========================================================================
+TrackEase V3.9 Passenger / Freight Operational Impact Report
+========================================================================
+
+SOURCES
+------------------------------------------------------------------------
+Weekly movement file        : C:\SIH_PROJECT\data\processed\weekly_section_movements.csv
+COA/goods file              : C:\SIH_PROJECT\data\processed\coa_goods_forecast.csv
+Goods integration status    : COA_STYLE_GOODS_FORECAST_USED
+Timetable traffic basis     : SCHEDULED_TIMETABLE_TRAFFIC; TRAIN_CLASS_NOT_PRESENT
+
+SUMMARY
+------------------------------------------------------------------------
+Section traffic profiles    : 15,967
+Maintenance tasks evaluated : 1,200
+Average scheduled exposure  : 0.704
+Average goods exposure      : 0.009
+Average operational score   : 16.33
+Maximum operational score   : 96.67
+
+OPERATIONAL DELAY-RISK BANDS
+------------------------------------------------------------------------
+VERY_HIGH                    15
+HIGH                         43
+MEDIUM                      191
+LOW                          72
+VERY_LOW                    879
+
+INTEGRITY
+------------------------------------------------------------------------
+Duplicate section profiles : 0
+Duplicate task exposure    : 0
+Tasks missing exposure     : 0
+Tasks without traffic data : 0
+Score values out of range  : 0
+
+IMPORTANT INTERPRETATION
+------------------------------------------------------------------------
+This stage measures PRE-WINDOW operational exposure. It does not claim that a specific train is affected until an exact candidate block window is selected.
+The scheduled timetable traffic and COA-style goods forecast remain separate so TrackEase does not silently invent freight or passenger classifications.
+Exact affected train numbers, exact train/block overlaps and window-specific delay estimates are deferred to the candidate-window/opportunity stage.
+Safety constraints remain hard constraints regardless of the operational impact score.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Build the opportunity/shadow-block detector and exact candidate windows. At that stage TrackEase will enumerate the actual scheduled trains and goods events overlapping each candidate window and calculate window-specific impact.

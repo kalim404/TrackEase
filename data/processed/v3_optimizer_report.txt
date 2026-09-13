@@ -1,0 +1,49 @@
+========================================================================
+TrackEase V3.12 Resource-Aware Optimizer Report
+========================================================================
+
+OPTIMIZATION SUMMARY
+------------------------------------------------------------------------
+Canonical maintenance tasks      : 1,200
+Scheduled tasks                  : 204
+Unscheduled tasks                : 996
+Overall scheduled percentage     : 17.00%
+Resource booking rows            : 1,177
+Repositioning-required selections: 98
+Integrated opportunities realized: 0
+Shadow opportunities realized    : 2
+
+SELECTED PLAN QUALITY
+------------------------------------------------------------------------
+Average optimizer score          : 65.40
+Average maintenance value        : 55.57
+Average operational impact       : 9.53
+
+UNSCHEDULED REASONS
+------------------------------------------------------------------------
+RESOURCE_DOUBLE_BOOKING                                 647
+NO_V3_11_FEASIBLE_WINDOW                                343
+CREW_DUTY_LIMIT_EXCEEDED                                  2
+SECTION_BLOCK_CONFLICT                                    2
+PREDECESSOR_NOT_SCHEDULED                                 1
+PREDECESSOR_FINISHES_AFTER_SUCCESSOR_START                1
+
+FINAL HARD-CONSTRAINT VALIDATION
+------------------------------------------------------------------------
+Duplicate scheduled tasks      : 0
+Duplicate selected candidates  : 0
+Invalid section overlaps       : 0
+Physical resource overlaps     : 0
+Dependency violations          : 0
+Material inventory overdraws   : 0
+
+OPTIMIZER BOUNDARY
+------------------------------------------------------------------------
+This is a deterministic constraint-aware heuristic. It does not claim mathematical global optimality.
+All selected windows already passed V3.10 train/goods safety and V3.11 exact resource-time/safety feasibility.
+Physical infrastructure fields unavailable from source data remain review flags and are not fabricated.
+Human railway authorization, execution monitoring, testing and technical handback remain mandatory.
+
+NEXT STAGES
+------------------------------------------------------------------------
+V3.13 adds emergency + multi-disruption handling. V3.14 then tests scenario robustness before rolling-horizon replanning.

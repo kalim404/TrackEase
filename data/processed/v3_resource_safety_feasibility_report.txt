@@ -1,0 +1,51 @@
+========================================================================
+TrackEase V3.11 Exact Resource-Time & Safety Feasibility Report
+========================================================================
+
+SUMMARY
+------------------------------------------------------------------------
+Input candidate windows          : 12,721
+Feasible windows                 : 12,519
+  Ready without repositioning    : 4,333
+  Repositioning required         : 8,186
+Rejected windows                 : 202
+Tasks with >=1 feasible window   : 1,051
+Selected requirement assignments : 80,989
+Integrated opportunities ready   : 131
+Shadow opportunities ready       : 355
+
+WINDOW STATUS
+------------------------------------------------------------------------
+FEASIBLE_READY_FOR_OPTIMIZER                        4,333
+FEASIBLE_REPOSITIONING_REQUIRED                     8,186
+REJECTED_DEPENDENCY_SEQUENCE                            5
+REJECTED_RESOURCE_OR_SAFETY_GATE                      197
+
+TASK STATUS
+------------------------------------------------------------------------
+READY_FOR_OPTIMIZER                                   569
+REPOSITIONING_REQUIRED                                482
+
+BASE REJECTION REASONS
+------------------------------------------------------------------------
+MANDATORY_RESOURCE_TIME_REQUIREMENT_FAILED            197
+
+INTEGRITY / HARD SAFETY
+------------------------------------------------------------------------
+Duplicate feasibility IDs        : 0
+Missing feasibility rows         : 0
+Accepted train conflicts         : 0
+Accepted goods conflicts         : 0
+Accepted mandatory resource fail : 0
+
+IMPORTANT BOUNDARIES
+------------------------------------------------------------------------
+A V3.11 feasible window has at least one compatible candidate for every mandatory resource requirement at that actual block time.
+REPOSITIONING_REQUIRED means the resource can cover the block but its movement to the worksite must be explicitly scheduled by Optimizer V3.
+Simultaneous competition between different tasks for the same crew, machine or equipment is intentionally deferred to Resource-Aware Optimizer V3.
+Physical track/electrification/signalling details unavailable from source data remain explicit review flags; TrackEase does not fabricate them.
+Human authorization, disconnection confirmation, testing and technical handback remain mandatory lifecycle gates.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Feed only V3.11-feasible windows and their candidate resource assignments into Resource-Aware Optimizer V3.

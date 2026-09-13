@@ -1,0 +1,54 @@
+========================================================================
+TrackEase V3.11 Deep Rejection Diagnostic Report
+========================================================================
+
+INPUT SUMMARY
+------------------------------------------------------------------------
+Feasibility rows                  : 12,721
+Rejection rows                    : 202
+Task summary rows                 : 1,051
+Requirement rows                  : 8,059
+Resource assignment rows          : 80,989
+Assignment candidate coverage     : 12,519
+Assignment candidate/req slots    : 80,989
+Tasks with zero feasible windows  : 1,051
+
+V3.11 FINAL STATUS COUNTS
+------------------------------------------------------------------------
+FEASIBLE_REPOSITIONING_REQUIRED                           8,186
+FEASIBLE_READY_FOR_OPTIMIZER                              4,333
+REJECTED_RESOURCE_OR_SAFETY_GATE                            197
+REJECTED_DEPENDENCY_SEQUENCE                                  5
+
+FAILED REQUIREMENT REASONS
+------------------------------------------------------------------------
+CREW_SHIFT_DOES_NOT_COVER_BLOCK                             197
+REJECTION_WITHOUT_PARSED_REASON                               5
+
+FAILED RESOURCE CATEGORIES
+------------------------------------------------------------------------
+CREW                                                        197
+
+FAILED CATEGORY + REQUIREMENT TYPE
+------------------------------------------------------------------------
+CREW::CREW                                                  197
+
+ZERO-FEASIBLE-WINDOW TASKS: PRIMARY REASON
+------------------------------------------------------------------------
+CREW_SHIFT_DOES_NOT_COVER_BLOCK                             168
+REJECTION_WITHOUT_PARSED_REASON                               5
+
+ZERO-FEASIBLE-WINDOW TASKS: PRIMARY RESOURCE CATEGORY
+------------------------------------------------------------------------
+CREW                                                        168
+
+ZERO-FEASIBLE-WINDOW TASKS: PRIMARY REQUIREMENT TYPE
+------------------------------------------------------------------------
+CREW                                                        168
+
+INTERPRETATION GUIDE
+------------------------------------------------------------------------
+If WINDOW_EXTENDS_OUTSIDE_PROTECTION_SHIFT dominates, the current conservative no-handover protection model is the main V3.11 capacity limiter.
+If POWER_ISOLATION_SUPPORT_NOT_TIME_READY or other crew-time failures dominate, inspect exact shift coverage before changing the optimizer.
+If failures remain spread across many real resource types after the expanded V3.5 pool, V3.11 is probably exposing genuine prototype resource/time limits rather than a shortlist artifact.
+This diagnostic does not weaken any safety gate and does not change the planning outputs.

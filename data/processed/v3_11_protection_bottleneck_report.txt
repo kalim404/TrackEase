@@ -1,0 +1,68 @@
+========================================================================
+TrackEase V3.11 Protection Crew Bottleneck Diagnostic
+========================================================================
+
+SUMMARY
+------------------------------------------------------------------------
+Protection requirements             : 1,200
+Protection assignment candidates     : 21,600
+Protection-related crew IDs          : 67
+Rejected windows with protection gate: 0
+Diagnostic rows                      : 0
+
+DIAGNOSIS
+------------------------------------------------------------------------
+No protection-gate failures found.
+
+FAILED WINDOW START HOUR DISTRIBUTION
+------------------------------------------------------------------------
+
+PROTECTION CREW AVAILABILITY PATTERNS
+------------------------------------------------------------------------
+FRI        00:00-08:00 available=True  rows=  20
+MON        00:00-08:00 available=True  rows=  20
+TUE        00:00-08:00 available=True  rows=  20
+WED        00:00-08:00 available=True  rows=  20
+SAT        00:00-08:00 available=True  rows=  20
+MON        08:00-16:00 available=True  rows=  19
+MON        16:00-00:00 available=True  rows=  19
+FRI        08:00-16:00 available=True  rows=  19
+THU        00:00-08:00 available=True  rows=  19
+SUN        16:00-00:00 available=True  rows=  19
+THU        16:00-00:00 available=True  rows=  19
+TUE        16:00-00:00 available=True  rows=  19
+WED        16:00-00:00 available=True  rows=  19
+WED        08:00-16:00 available=True  rows=  19
+THU        08:00-16:00 available=True  rows=  19
+TUE        08:00-16:00 available=True  rows=  19
+SAT        16:00-00:00 available=True  rows=  19
+SUN        00:00-08:00 available=True  rows=  19
+SUN        08:00-16:00 available=True  rows=  19
+FRI        16:00-00:00 available=True  rows=  18
+SAT        08:00-16:00 available=True  rows=  18
+SUN        00:00-08:00 available=False rows=   4
+FRI        16:00-00:00 available=False rows=   4
+SAT        08:00-16:00 available=False rows=   4
+THU        00:00-08:00 available=False rows=   4
+FRI        00:00-08:00 available=False rows=   3
+MON        08:00-16:00 available=False rows=   3
+MON        00:00-08:00 available=False rows=   3
+FRI        08:00-16:00 available=False rows=   3
+SUN        16:00-00:00 available=False rows=   3
+MON        16:00-00:00 available=False rows=   3
+SUN        08:00-16:00 available=False rows=   3
+SAT        00:00-08:00 available=False rows=   3
+SAT        16:00-00:00 available=False rows=   3
+TUE        08:00-16:00 available=False rows=   3
+TUE        00:00-08:00 available=False rows=   3
+THU        08:00-16:00 available=False rows=   3
+THU        16:00-00:00 available=False rows=   3
+WED        00:00-08:00 available=False rows=   3
+TUE        16:00-00:00 available=False rows=   3
+
+INTERPRETATION GUIDE
+------------------------------------------------------------------------
+NO_PROTECTION_ASSIGNMENT_CANDIDATE: V3.5 did not produce a protection crew candidate for the requirement.
+NO_PROTECTION_CREW_ON_DUTY_AT_WINDOW_START: candidate crews exist, but none is on duty when the block begins.
+WINDOW_EXTENDS_OUTSIDE_PROTECTION_SHIFT: at least one crew is on duty at the start, but no single crew shift covers the whole maintenance block.
+UNEXPECTED_PROTECTION_GATE_MISMATCH: this diagnostic finds an exact-time-ready protection crew even though V3.11 rejected the protection gate; this requires a code fix before freeze.

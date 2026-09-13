@@ -1,0 +1,44 @@
+========================================================================
+TrackEase V3.10 Opportunity / Shadow Block Detector Report
+========================================================================
+
+SOURCES
+------------------------------------------------------------------------
+Safe-window source       : C:\SIH_PROJECT\data\processed\adjusted_block_windows.csv
+Weekly movements source  : C:\SIH_PROJECT\data\processed\weekly_section_movements.csv
+COA/goods source         : C:\SIH_PROJECT\data\processed\coa_goods_forecast.csv
+Train exact-time status  : TIME_SCHEMA_AVAILABLE_TRACK_EASE_WEEKLY_MINUTES
+Goods exact-time status  : TIME_SCHEMA_AVAILABLE_TRACK_EASE_WEEKLY_MINUTES
+
+SUMMARY
+------------------------------------------------------------------------
+Normalized safe windows  : 467,517
+Maintenance tasks        : 1,200
+Candidate block windows  : 12,721
+Tasks with opportunities : 1,051
+Tasks without opportunity: 149
+Integrated opportunities : 138
+Shadow opportunities     : 397
+
+TASK OPPORTUNITY STATUS
+------------------------------------------------------------------------
+NO_DURATION_FIT_WINDOW                        149
+SAFE_OPPORTUNITY_AVAILABLE                  1,051
+
+INTEGRITY / SAFETY
+------------------------------------------------------------------------
+Duplicate candidate IDs      : 0
+Duplicate task summaries     : 0
+Missing task summaries       : 0
+Accepted train conflicts     : 0
+Accepted goods conflicts     : 0
+
+INTERPRETATION
+------------------------------------------------------------------------
+Task candidates come only from the previously validated safe window layer and are rechecked against exact available movement/event timing.
+Integrated and shadow outputs are still candidate coordination arrangements. They require exact resource timing, isolation/disconnection validation, detailed safety gates and human authorization.
+A task with no opportunity is not silently forced into the schedule; it remains available for later deferral, alternative planning or disruption/replanning logic.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Run detailed safety/resource-time feasibility for candidate windows, then feed only validated windows into Resource-Aware Optimizer V3.

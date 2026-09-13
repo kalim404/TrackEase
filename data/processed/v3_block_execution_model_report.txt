@@ -1,0 +1,53 @@
+========================================================================
+TrackEase V3.6 Block Requirement & Execution Timing Report
+========================================================================
+
+SUMMARY
+------------------------------------------------------------------------
+Maintenance tasks                : 1,200
+Block requirement records        : 1,200
+Timing records                   : 1,200
+Integrated-block eligible tasks  : 65
+Shadow/opportunity eligible tasks: 1,200
+Emergency tasks in current data  : 0
+Splittable tasks                 : 967
+
+PRIMARY BLOCK REQUIREMENTS
+------------------------------------------------------------------------
+TRAFFIC_BLOCK                                     803
+TRAFFIC_DISCONNECTION_BLOCK                       197
+TRAFFIC_POWER_BLOCK                               200
+
+PLANNING MODES
+------------------------------------------------------------------------
+INTEGRATED_BLOCK_CANDIDATE                         65
+STANDARD_PLANNED_BLOCK                          1,135
+
+TIMING
+------------------------------------------------------------------------
+Average expected core work min  : 131.94
+Average fixed overhead min      : 56.45
+Average expected total block min: 188.38
+Maximum expected total block min: 300
+
+INTEGRITY
+------------------------------------------------------------------------
+Duplicate block task IDs        : 0
+Duplicate timing task IDs       : 0
+Tasks missing block requirement : 0
+Tasks missing timing            : 0
+Invalid duration ordering       : 0
+Invalid continuous duration     : 0
+Non-human authorization rows    : 0
+Non-hard-safety rows            : 0
+
+IMPORTANT INTERPRETATION
+------------------------------------------------------------------------
+Traffic block, power block and disconnection are modeled as operational restrictions.
+Integrated and shadow blocks are modeled as coordination or opportunity arrangements that still retain all underlying safety, resource and authorization requirements.
+Timing overheads are deterministic TrackEase prototype planning assumptions; they are not presented as official Indian Railways standard times.
+TrackEase recommends and validates candidate arrangements; it does not grant or authorize a railway block.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Build the multi-department compatibility graph to decide whether same/adjacent-section tasks may run in parallel, sequentially, under common isolation, as an integrated block, or must remain incompatible.

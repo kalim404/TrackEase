@@ -1,0 +1,43 @@
+========================================================================
+TrackEase V3 Railway Network Model Report
+========================================================================
+
+OUTPUT SUMMARY
+------------------------------------------------------------------------
+Stations                     : 8,591
+Railway sections             : 16,063
+Section constraint records   : 16,063
+Operational rules            : 8
+
+SECTION TRAFFIC CLASS
+------------------------------------------------------------------------
+High                                4,403
+Low                                 4,385
+Moderate                            3,733
+Very High                           3,542
+
+OPERATIONAL CONSTRAINT LEVEL
+------------------------------------------------------------------------
+HIGH                                4,403
+LOW                                 4,385
+MODERATE                            3,733
+VERY_HIGH                           3,542
+
+INTEGRITY
+------------------------------------------------------------------------
+Duplicate station codes      : 0
+Duplicate section IDs        : 0
+Duplicate constraint sections: 0
+Sections missing constraints : 0
+Invalid capacity proxies     : 0
+Invalid utilization proxies  : 0
+
+DATA PROVENANCE
+------------------------------------------------------------------------
+Observed traffic metrics come from TrackEase timetable-derived weekly section movements.
+Unavailable physical track, signalling, electrification and station-facility attributes are not claimed as real source facts.
+Prototype planning fields are explicitly marked with PROTOTYPE_NETWORK_CONSTRAINT_ADAPTER.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Build departments, crews, crew skills/shifts, machines, equipment, materials and their availability datasets.

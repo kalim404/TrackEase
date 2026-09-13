@@ -1,0 +1,70 @@
+========================================================================
+TrackEase V3 Resource Model Report
+========================================================================
+
+TASK DEMAND
+------------------------------------------------------------------------
+Engineering                         803
+S&T                                 358
+Electrical                          200
+Protection                        1,200
+
+RESOURCE SUMMARY
+------------------------------------------------------------------------
+Departments                  : 4
+Crews                        : 186
+Crew-skill mappings          : 278
+Crew availability rows       : 1,302
+Machines                     : 39
+Machine availability rows    : 273
+Equipment units              : 194
+Material inventory rows      : 144
+
+CREWS BY DEPARTMENT
+------------------------------------------------------------------------
+Electrical                           25
+Engineering                          58
+Protection                           67
+S&T                                  36
+
+MACHINES BY DEPARTMENT
+------------------------------------------------------------------------
+Electrical                           12
+Engineering                          18
+S&T                                   9
+
+EQUIPMENT BY DEPARTMENT
+------------------------------------------------------------------------
+Electrical                           40
+Engineering                          72
+Protection                           40
+S&T                                  42
+
+MATERIAL INVENTORY BY DEPARTMENT
+------------------------------------------------------------------------
+Electrical                           36
+Engineering                          72
+S&T                                  36
+
+INTEGRITY
+------------------------------------------------------------------------
+Duplicate department IDs     : 0
+Duplicate crew IDs           : 0
+Duplicate machine IDs        : 0
+Duplicate equipment IDs      : 0
+Duplicate inventory IDs      : 0
+Crews missing skills         : 0
+Crews missing availability   : 0
+Machines missing availability: 0
+
+PROVENANCE
+------------------------------------------------------------------------
+Data origin                  : DETERMINISTIC_RESOURCE_GENERATOR
+Integration mode             : PROTOTYPE_RESOURCE_ADAPTER
+
+All resource records are deterministic prototype planning data anchored to real TrackEase station codes.
+They are not claimed to be real Indian Railways crew rosters, machine allocations, equipment registers or inventory records.
+
+NEXT V3 STAGE
+------------------------------------------------------------------------
+Build task-resource requirements linking each V3 maintenance task to required skills, crew capacity, machines, equipment, materials, protection and electrical isolation.

@@ -1,0 +1,71 @@
+========================================================================
+TrackEase V3.12 Resource Double-Booking Bottleneck Report
+========================================================================
+
+Double-booking unscheduled tasks : 634
+Diagnostic requirement slots     : 22,236
+Fully blocked requirement slots  : 9,298
+
+PRIMARY BLOCKER BY TASK
+------------------------------------------------------------------------
+MACHINE::MACHINE                                        209
+CREW::PROTECTION_CREW                                   181
+CREW::CREW                                              152
+OPERATIONAL_PREREQUISITE::POWER_ISOLATION                60
+EQUIPMENT::PROTECTION_EQUIPMENT                          20
+EQUIPMENT::EQUIPMENT                                     12
+
+FULLY BLOCKED SLOTS BY CATEGORY
+------------------------------------------------------------------------
+CREW                                                  4,864
+MACHINE                                               2,456
+EQUIPMENT                                             1,583
+OPERATIONAL_PREREQUISITE                                395
+
+FULLY BLOCKED SLOTS BY REQUIREMENT TYPE
+------------------------------------------------------------------------
+CREW::PROTECTION_CREW                                 2,619
+MACHINE::MACHINE                                      2,456
+CREW::CREW                                            2,245
+EQUIPMENT::PROTECTION_EQUIPMENT                       1,097
+EQUIPMENT::EQUIPMENT                                    486
+OPERATIONAL_PREREQUISITE::POWER_ISOLATION               395
+
+MOST COMMON BLOCKED RESOURCE IDS
+------------------------------------------------------------------------
+MACH-BALLAST-REGULA-04                                1,477
+MACH-BALLAST-REGULA-01                                1,139
+MACH-BALLAST-REGULA-03                                1,128
+EQ-PROTECTION-009                                     1,083
+EQ-PROTECTION-013                                     1,000
+CREW-PROT-005                                           929
+EQ-PROTECTION-008                                       902
+MACH-SIGNAL-TEST-VA-05                                  817
+CREW-ENG-058                                            745
+EQ-TRACK-GAUGE-004                                      710
+CREW-PROT-023                                           706
+MACH-SIGNAL-TEST-VA-03                                  684
+EQ-TRACK-GAUGE-012                                      667
+MACH-SIGNAL-TEST-VA-02                                  628
+CREW-ENG-004                                            625
+EQ-TRACK-GAUGE-017                                      614
+EQ-PROTECTION-005                                       604
+EQ-TRACK-GAUGE-013                                      597
+CREW-ENG-034                                            554
+MACH-SIGNAL-TEST-VA-01                                  540
+EQ-PROTECTION-024                                       521
+CREW-PROT-059                                           484
+EQ-PROTECTION-033                                       479
+CREW-PROT-002                                           470
+MACH-RAIL-MAINTENAN-01                                  469
+CREW-PROT-032                                           455
+CREW-ENG-019                                            437
+EQ-PROTECTION-004                                       434
+MACH-RAIL-MAINTENAN-02                                  430
+CREW-PROT-020                                           420
+
+INTERPRETATION
+------------------------------------------------------------------------
+A fully blocked requirement slot means every exact-time-safe resource option currently available to that requirement overlaps a resource already selected in the final schedule.
+If equipment/machine/crew categories dominate, the next fix should widen or diversify that resource candidate pool rather than weaken safety or allow double-booking.
+NO_ALL-BLOCKED_SLOT_IN_FINAL_STATE can occur because the optimizer is sequential: a resource conflict existed when the task was considered, but the final diagnostic state does not reconstruct the exact intermediate search state.

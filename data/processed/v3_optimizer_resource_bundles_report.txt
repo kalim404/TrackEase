@@ -1,0 +1,29 @@
+========================================================================
+TrackEase V3.12A2 Handover-Aware Resource Bundle Report
+========================================================================
+
+V3.11-feasible windows        : 12,519
+Mandatory requirement slots   : 80,989
+Resource option bundles       : 492,249
+Physical bundle-member rows   : 582,308
+Single-resource bundles       : 402,190
+Handover bundles              : 90,059
+Missing requirement slots     : 0
+Duplicate bundles             : 0
+Duplicate member rows         : 0
+Handover coverage failures    : 0
+Average bundles per slot      : 6.08
+Minimum bundles per slot      : 1
+Maximum bundles per slot      : 12
+
+HANDOVER BUNDLES BY REQUIREMENT TYPE
+------------------------------------------------------------------------
+PROTECTION_CREW                                   51,048
+CREW                                              38,912
+POWER_ISOLATION                                       99
+
+BOUNDARY
+------------------------------------------------------------------------
+Each handover bundle explicitly identifies every physical crew and the exact segment it covers.
+V3.12 must reserve every bundle member independently; a handover chain is never treated as one fictional resource.
+Final railway protection/technical handover remains subject to human authorization and applicable rules.

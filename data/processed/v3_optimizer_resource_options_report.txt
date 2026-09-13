@@ -1,0 +1,26 @@
+========================================================================
+TrackEase V3.12A Exact-Time Resource Option Expansion Report
+========================================================================
+
+V3.11-feasible windows        : 5,156
+Mandatory requirement slots   : 32,490
+Exact-time resource options   : 185,482
+Missing mandatory option slots: 0
+Duplicate option rows         : 0
+Average options per slot      : 5.71
+Minimum options per slot      : 1
+Maximum options per slot      : 9
+
+OPTION ROWS BY RESOURCE CATEGORY
+------------------------------------------------------------------------
+CREW                               52,089
+EQUIPMENT                         100,584
+MACHINE                            23,127
+MATERIAL                            8,673
+OPERATIONAL_PREREQUISITE            1,009
+
+INTERPRETATION
+------------------------------------------------------------------------
+Every option independently passes the exact window-time checks.
+Optimizer V3 may choose another safe option when one is booked.
+No safety, shift, qualification or material rule is relaxed.
