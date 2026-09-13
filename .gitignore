@@ -10,48 +10,49 @@ env/
 # Python cache
 __pycache__/
 *.py[cod]
+.pytest_cache/
 
-# VS Code local settings
+# VS Code
 .vscode/
 
-# Secrets / API keys
+# Frontend generated files
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Secrets
 .env
 .env.*
 !.env.example
 
-# OS files
-.DS_Store
-Thumbs.db
+# Raw/local datasets
+data/raw/
 
-# Temporary/log files
-*.log
-*.tmp
-
-# --------------------------------------------
-# Large source maintenance datasets
-# --------------------------------------------
-data/raw/maintenance/*.csv
-
-# --------------------------------------------
 # Generated processed datasets
-# Keep reports, ignore heavy generated tables
-# --------------------------------------------
 data/processed/*.csv
 data/processed/*.jsonl
+data/processed/*.parquet
 
-# Keep text reports
+# Keep reports
 !data/processed/*.txt
+!data/processed/*.md
 
-# --------------------------------------------
-# Trained binary models
-# --------------------------------------------
+# Generated ML models
 data/models/*.joblib
 data/models/*.pkl
+data/models/*.pickle
 
-# Future React frontend
-frontend/node_modules/
-frontend/dist/
+# Temporary files
+*.bak
+*.bak_*
+*.tmp
+*.log
 
 # Runtime databases
 *.db
 *.sqlite
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
